@@ -1,0 +1,219 @@
+/* Import font from google */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+body {
+   background-color: rgb(200, 200, 200);
+   font-family: sans-serif;
+   margin: 0;
+   padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   font-family: "Open Sans", sans-serif;
+   color: #167d7f;
+}
+
+a {
+   color: #29a0b1;
+}
+
+a:visited {
+   color: #16796f;
+}
+
+#topo, #menu, .destaques, section {
+   width: 65%;
+   margin: 0 17.5%;
+}
+
+#topo h1 {
+   animation: introducao 10s linear infinite alternate;
+   -webkit-animation: introducao 10s linear infinite alternate;
+   -moz-animation: introducao 10s linear infinite alternate;
+}
+
+@-webkit-keyframes introducao {
+   0% {
+      color: #167d7f;
+      -webkit-transform: rotate(0deg);
+   }
+
+   25% {
+      color: #29a0b1;
+      -webkit-transform: rotate(1.01 deg) scale(1.01);
+   }
+
+   50% {
+      color: #89aca0;
+      -webkit-transform: rotate(0deg);
+   }
+
+   75% {
+      color: #294a41;
+      -webkit-transform: rotate(-1.01deg) scale(1.01);
+   }
+
+   100% {
+      color: #518060;
+      -webkit-transform: rotate(0deg);
+   }
+}
+
+@keyframes introducao {
+   0% {
+      color: #10564f;
+      -webkit-transform: rotate(0deg);
+   }
+
+   25% {
+      color: #29a0b1;
+      -webkit-transform: rotate(1.01deg) scale(1.01);
+   }
+
+   50% {
+      color: #294a41;
+      -webkit-transform: rotate(0deg);
+   }
+
+   75% {
+      color: #518060;
+      -webkit-transform: rotate(-1.01deg) scale(1.01);
+   }
+
+   100% {
+      color: #167d7f;
+      -webkit-transform: rotate(0deg);
+   }
+}
+
+#menu ul {
+   text-align: center;
+}
+
+#menu li {
+   display: inline;
+   padding: 10px;
+   white-space: nowrap;
+}
+
+.destaques li {
+   width: 25%;
+   float: left;
+   text-align: center;
+   list-style: none;
+   padding: 20px 0;
+}
+
+.destaques li:hover {
+   -webkit-transform: scale(1.1);
+   -moz-transform: scale(1.1);
+   transform: scale(1.1);
+   -webkit-transition: all 2500ms linear;
+   -moz-transition: all 2500ms linear;
+   transition: all 2500ms linear;
+}
+
+.destaques li strong {
+   width: 100%;
+   display: block;
+}
+
+.center {
+   text-align: center;
+}
+
+table, tr, td {
+   border: 1px solid #000;
+}
+
+table {
+   background-color: #ddd;
+   margin: 0 auto;
+}
+
+form fieldset {
+   border: none;
+}
+
+form legend {
+   text-transform: uppercase;
+   font-size: 1.2em;
+   padding: 0;
+   width: 100%;
+   border-bottom: 1px solid #555;
+}
+
+form label, form input:not([type="checkbox"]), form select, form textarea {
+   width: 100%;
+}
+
+form div {
+   width: 44%;
+   margin: 20px 1% 0 3%;
+   height: 180px;
+   float: left;
+}
+
+button {
+   padding: 10px 20px;
+   background-color: #167d7f;
+   color: #fff;
+   border: none;
+   -webkit-border-radius: 5px;
+   -moz-border-radius: 5px;
+   border-radius: 5px;
+   margin-bottom: 20px;
+}
+
+#rodape {
+   width: 100%;
+   background-color: #333;
+   color: #ccc;
+   float: left;
+   text-align: center;
+   margin-top: 20px;
+}
+
+#rodape li {
+   display: inline;
+   white-space: nowrap;
+}
+
+@media (max-width: 575px) {
+   #topo, #menu, .destaques, section {
+      width: 95%;
+      margin: 2.5%;
+   }
+
+   .destaques li {
+      width: 100%;
+      float: left;
+      text-align: center;
+      list-style: none;
+      padding: 20px 0;
+   }
+   
+   table {
+      font-size: 12px;
+   }
+
+   form div {
+      clear: both;
+      width: 90%;
+   }
+}
+ 
+ @media (min-width: 576px) and (max-width: 1024px) {
+   #topo, #menu, .destaques, section {
+      width: 80%;
+      margin: 0 10%;
+   }
+
+   .destaques li {
+   width: 50%;
+   float: left;
+   text-align: center;
+   list-style: none;
+   padding: 20px 0;
+   }
+}
